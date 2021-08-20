@@ -1,0 +1,98 @@
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap:1rem;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.container{
+    overflow: hidden;
+}
+
+@media screen and (max-width:1000px) {
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        grid-gap:1rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:1rem;
+        justify-items: center;
+    }
+    .display-type-button{
+        display: none;
+    }
+}
+
+.playlist-main{
+    background-color: #323232;
+    color: #fff;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.playlist-main .header{
+    color: var(--var-headerColor);
+}
+
+.playlists{
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.playlist-main .playlist-detail{
+    border-left:1px solid rgba(255, 255, 255, 0.1) ;
+}
+
+.header input, .header select{
+    height: 32px;
+    background-color: rgb(31, 31, 31) !important;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header input:focus-visible, .header select:focus-visible{
+    box-shadow: none;
+    border: 3px solid rgb(23 169 162 / 81%);
+    outline: rgb(23 169 162 / 81%);
+}
+
+.display-type-button.active{
+    fill: rgb(23 169 162 / 81%);
+}
+
+.table-wrapper{
+    overflow-y: auto;
+    height: 50vh;
+}
+
+.table{
+    background-color: rgb(31, 31, 31) !important;
+    color: var(--var-headerColor) !important;
+}
+
+.table .favorite{
+    left:0rem;
+    top: 0rem;
+}
+
+.table td a{
+    color: var(--var-headerColor);
+    text-decoration: none;
+}
+
+.table td a:hover{
+    color: var(--var-headerColor);
+    text-decoration: underline;
+}

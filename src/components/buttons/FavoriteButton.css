@@ -1,0 +1,11 @@
+.favorite{
+  position: relative;
+  top:-6rem;
+  left:1.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.favorite .active{
+  color: orange;
+}

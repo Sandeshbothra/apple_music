@@ -1,0 +1,5 @@
+:root{
+    font-size: 12px;
+    --var-headerColor:rgba(255, 255, 255, 0.85);
+    --var-textColor:rgba(255, 255, 255, 0.55);
+}

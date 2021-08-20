@@ -1,0 +1,40 @@
+.card-grid a{
+    color:initial;
+    text-decoration:initial;
+}
+.card-main{
+    width: 170px;
+    height: 210px;
+}
+
+.card-main img{
+    border-radius: 5px;
+}
+
+.card-main .card-details{
+    padding-top: 5px;
+}
+
+.card-details p{
+    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.card-details .title{
+    height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color:var(--var-headerColor);
+}
+
+.card-details:hover p{
+    text-decoration: underline;
+}
+
+.card-details .category{ 
+    color:var(--var-textColor);
+}
